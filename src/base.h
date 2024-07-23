@@ -16,7 +16,9 @@ class MainFrame: public wxFrame
 		MainFrame(const wxString &title, const wxPoint &pos, const wxSize &size);
 		~MainFrame();
 		void OnQuit(wxCommandEvent &event);
+		void OnSize(wxSizeEvent &event);
 		void OnPaint(wxPaintEvent &event);
+		void OnEreaseBackground(wxEraseEvent &event);
 		
 	private:
 		
